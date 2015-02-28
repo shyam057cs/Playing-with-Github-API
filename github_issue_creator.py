@@ -4,7 +4,7 @@ import json
 from urllib2 import urlopen, Request, HTTPError
 
 MY_GITHUB_URL = "https://api.github.com/repos/shyam057cs/Playing-with-Github-API/issues"
-MY_TOKEN = "a85f1bc21ca136dd5da1b7892df75990bdf03caf"
+MY_TOKEN = "valid_token"
 
 def create_issue(title,body,url = MY_GITHUB_URL, token = MY_TOKEN, ):
     data = json.dumps({ "title": title, "body": body})
